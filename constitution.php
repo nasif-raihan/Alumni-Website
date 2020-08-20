@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body {
+  padding-top: 5px;
+  padding-left: 35px;
+  padding-right: 30px;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Constitution</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<?php
+include "header.php";
+?>
+<br><br><br><br>
+<!-------------constitution copied from BUET ALUMNI as a sample---------------------->
+
+
+
+      <h4>CONSTITUTION</h4>
+      <p>In collaboration and consultation with RUET authority, to carry out the following activities:</p>
+      <p>1.Enhance, uphold and promote the image and heritage of RUET as a Center of Excellence in technical and science education and research in Bangladesh and abroad.</p>
+
+      <p>2.Support efforts of RUET and other appropriate organizations for enhancing the quality of education and research and for establishing state-of-the-art educational and research facilities at RUET, including helping students and faculty members to participate in conferences, seminars and competitions.</p>
+    
+ 
+      <p>3.Raise funds from Members and Patrons of RUET Alumni as well as from&nbsp; alumni at large, individuals and organizations at home and abroad&nbsp; for implementing development projects that have been chosen jointly with RUET authority for purposes indicated in (b) above.</p>
+
+      <p>4.Facilitate intellectual exchanges between RUET and advanced universities and institutions in other countries.</p>
+    
+      <p>5.Offer career counseling to students, graduates and others associated with RUET.</p>
+
+      <p>6.Organize activities and information campaigns to continually expand its membership base and to collect contributions, donations and grants from Members, Patrons, individuals, companies, firms, semi-government and government organizations, NGOs, autonomous bodies, and societies that are local or foreign based. These contributions will be the primary financial resource required for implementing the various programs and activities of RUET Alumni for achieving its objectives.</p>
+    
+      <p>7.Develop and maintain a database of all members, which would include information on areas of their special expertise and interest, and maintaining regular communication with them through mails, publications, and web page that would facilitate their participation in the activities of RUET Alumni.</p>
+      
+
+      <p>8.Arrange social activities such as reunions, picnics, dinners, cultural programs, and exchange visits for greater social cohesion among members.</p>
+
+
+      <p>9.Conduct conferences, seminars, symposia, workshops, and discussion forums on relevant national issues that are of interest to members and others.</p>
+      
+      <p>10.Support research works in relevant fields and publication of appropriate books and journalson relevant subjects.</p>
+
+      <p>11.Set guidelines for ethics and disciplines for the members of RUET Alumni.</p>
+
+
+      <p>12.Liaise with other similar associations, institutes and universities.</p>
+
+   
+      <h5>LIABILITY OF MEMBERS</h5>
+      <p>The liability of members is limited.</p> 
+   
+      <h5>RESTRICTION ON DISTRIBUTION OF INCOME</h5>
+      <p>No portion of RUET Alumni&rsquo;s income, assets or properties shall be paid or transferred directly or indirectly by way of dividend, bonus or otherwise by way of profit to the persons who at any time are or were Members or Associate Members of RUET Alumni. Provided that nothing herein contained shall prevent the payment, in good faith, of remuneration to any officer or staff or servant of RUET Alumni or other persons in return for any services actually rendered to RUET Alumni.</p>
+    
+      <h5>DISSOLUTION</h5>
+   
+      <p>In the event of RUET Alumni being wound up or dissolved, it shall pay up all debts and liabilities. If there remains, after the payment of all its debts and liabilities, any asset or property whatsoever, the same shall not be paid to or distributed among the members of RUET Alumni but shall be given or transferred to either RUET or other association(s) having objectives similar to the objectives of RUET Alumni, to be determined by RUET Alumni Council at or before the time of the dissolution.</p>
+
+      <h5>AMENDMENTS</h5>
+
+      <p>All amendments to the Constitution of RUET Alumni shall be subject to scrutiny and approval by the general members of RUET Alumni through AGM.</p>
+
+      <p>&nbsp;</p>
+      </td>
+    </tr>
+
+
+
+
+
+
+
+
+
+<!------------END------------>
+
+
+
+<footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright &copy; 2019 All Right Reserved By <span>RUET ALUMNI</span></p>
+                </div>
+            </div>
+        </div>
+</footer>
+
+
+
+
+<!---Script----------->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <!-----25/10/2019---->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

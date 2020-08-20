@@ -1,0 +1,161 @@
+<?php
+
+    require "dbconfig/config.php";
+    include "header2.php";
+    // echo '<script type="text/javascript" charset="utf-8"async defer> alert("Done") </script>';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quering in DATABASE</title>
+	<style>
+	body {
+        padding-top: 2rem;
+        background-color: lightgrey;
+		}
+	</style>
+</head>
+<body>
+
+
+
+	<!-- Call to Action Well -->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+      <div class="card-body">
+        <h5 class="text-white m-0">Here is the result of your Query :</h5>
+      </div>
+    </div>
+
+			<table class="table"  >
+				  <thead>
+				    <tr>
+				      <th scope="row">Roll </th>
+				      <th scope="row">Name  </th>
+				      <th scope="row">Series </th>
+				      <th scope="row">Department </th>
+				      <th scope="row">Home District</th>
+				      <th scope="row">Gender</th>
+				      <th scope="row">Designation</th>
+				      <th scope="row">Company</th>
+				      <th scope="row">Country</th>
+				      <th scope="row">Email</th>
+				      <th scope="row">Phone No.</th>
+				      <th scope="row">Blood Group</th>
+				      <th scope="row">Fb Link</th>
+				     
+				    </tr>
+				  </thead>
+
+
+<?php
+	
+    if(isset($_POST['btn1']))
+    {
+
+		$roll = $_POST['roll'];
+		$name = $_POST['name'];
+		$series = $_POST['series'];
+		$bld_grp = $_POST['bld_grp'];
+		$company = $_POST['company'];
+		$country = $_POST['country'];
+
+?>
+ 	<div class="alert alert-danger" role="alert">
+	<h5 style="text-align: center;"><i>
+
+<?php
+		
+		if($roll==null and $name==null and $series==null and $bld_grp==null and $company==null and $country==null)
+		{
+
+			die("Select at least One criteria!");
+		}
+		?>
+		</i>
+		</h5>
+		
+		</div>
+<?php
+
+		if($roll == null)
+		{
+			$roll = '1';
+		}
+		if($name == null)
+		{
+			$name = '1';
+		}
+		if($series == null)
+		{
+			$series = '1';
+		}
+		if($bld_grp == null)
+		{
+			$bld_grp = '1';
+		}
+		if($company == null)
+		{
+			$company = '1';
+		}
+		if($country==null)
+		{
+			$country = '1';
+		}
+
+		$sql = "select roll,name,series,dept,home_dist,gender,designation,company,country,email,phone,bld_grp,fb from regi where (roll = $roll or $roll = '1') and (name like '%$name%' or '$name' = '1') and (series = $series or $series = '1') and (bld_grp = '$bld_grp' or '$bld_grp' = '1') and (company = '$company' or '$company' = '1') and (country = '$country' or '$country' = '1')";
+
+
+
+		$res = mysqli_query($conn,$sql);
+
+		$flag = 0;
+
+		if(!$res)
+		{
+			die("Query Failed!!!");
+		}
+		else
+		{
+			while($row = mysqli_fetch_assoc($res))
+			{
+				$flag = 1;
+					echo '
+						<tr>
+							<td>'.$row["roll"].'</td>
+							<td>'.$row["name"].'</td>
+							<td>'.$row["series"].'</td>
+							<td>'.$row["dept"].'</td>
+							<td>'.$row["home_dist"].'</td>
+							<td>'.$row["gender"].'</td>
+							<td>'.$row["designation"].'</td>
+							<td>'.$row["company"].'</td>
+							<td>'.$row["country"].'</td>
+							<td>'.$row["email"].'</td>
+							<td>'.$row["phone"].'</td>
+							<td>'.$row["bld_grp"].'</td>
+							<td>'.$row["fb"].'</td>
+						</tr>
+						';
+			}
+		}
+	}
+?>
+<div class="alert alert-danger" role="alert">
+<h4 style="text-align: center;">Member Table :</h4>
+
+<h5 style="text-align: center;"><i>
+	<?php
+
+	if(!$flag)
+	{
+		echo "Sorry! No result is found! ";
+	}
+	?>
+		
+	</i>
+	</h5>
+	</div>
+
+</body>
+</html>
