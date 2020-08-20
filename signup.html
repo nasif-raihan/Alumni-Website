@@ -1,7 +1,7 @@
 
 <?php
 
-  include "header.php";
+  include "header.html";
   require "dbconfig/config.php";
 
 ?>
@@ -140,7 +140,7 @@ body {
     if(isset($_SESSION['$roll']))
     {
       echo "<h1> Welcome ".$_SESSION['$roll']."</h1>";
-      echo '<script> window.location="query__.php" </script>'; 
+      echo '<script> window.location="query.html" </script>'; 
     }
 
 
@@ -169,11 +169,11 @@ body {
 
     if($flag)
     {
-      echo '<script> window.location="query__.php" </script>'; 
+      echo '<script> window.location="query.html" </script>'; 
     }
     else
     {
-      echo '<script> window.location="pass_cpass.php" </script>';
+      echo '<script> window.location="pass_cpass.html" </script>';
     }
       
       

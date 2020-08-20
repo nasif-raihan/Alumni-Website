@@ -3,13 +3,13 @@
 
 <?php
 require "dbconfig/config.php";
-include "header1.php";
+include "header1.html";
 ?>
 
 <br><br>
 
     <?php
-      include "slide.php";
+      include "slide.html";
     ?>
     <!---------------carousel is added above----------->
 
@@ -74,7 +74,7 @@ include "header1.php";
                 <div class="card-body">
                   <h5 class="card-title">Social Acitivities</h5>
                   <p><i>We the RUETians often raise fund and do some welfare activities for the society. Here is presented details about some welfare activities organized by our organization.</i></p>
-                  <a href="http://localhost/RUET%20ALUMNI/login.php" class="btn btn-success">Let's Visit</a>
+                  <a href="http://localhost/RUET%20ALUMNI/login.html" class="btn btn-success">Let's Visit</a>
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@ include "header1.php";
 
 <!-------event-------->
 <?php
-include "event.php";
+include "event.html";
 ?>
 <!----end event----->
 
@@ -152,7 +152,8 @@ include "event.php";
         {
             // echo 'hello';
             // echo "My name is shuvon";
-            // echo '<script window.location="home.php" </script>';
+            // echo '<script window.location="home.html" </script>'; 
+           
             $name = $_POST['name'];
             $email = $_POST['email'];
             $message = $_POST['message'];           
@@ -162,14 +163,14 @@ include "event.php";
 
             if(mysqli_num_rows($query_run)==0)
             {
-              echo '<script type="text/javascript" charset="utf-8" async defer> alert("Please do your Registration at first!") ; window.location="signin.php" </script>';
+              echo '<script type="text/javascript" charset="utf-8" async defer> alert("Please do your Registration at first!") ; window.location="signin.html" </script>';
             }
             else
             {
                 $query = "insert into feedback values('$name','$email','$message')";
                 $query_run = mysqli_query($conn,$query);
 
-                echo '<script type="text/javascript" charset="utf-8" async defer> alert("Message submitted successfully!!! Thanks for your Feedback") ; window.location="home.php" </script>';
+                echo '<script type="text/javascript" charset="utf-8" async defer> alert("Message submitted successfully!!! Thanks for your Feedback") ; window.location="home.html" </script>';
 
             }
             
@@ -206,7 +207,7 @@ include "event.php";
     </section>
     
 <?php
-  include "footer.php";
+  include "footer.html";
 ?>
 
 </body>

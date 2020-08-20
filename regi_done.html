@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Error</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -12,31 +12,34 @@
 <body>
 
 <?php
-  include "header.php";
+  include "header.html";
+?>
+
+<br><br>
+      
+  <div class="card text-blue bg-secondary my-5 py-4 text-center">
+      <div class="card-body">
+        
+        <div class="alert alert-success" role="alert">
+        <h5>Congratulations!! You are successfully Registered.</h5>
+        </div>
+
+        <br><br>
+        <img src="img/success.jpg" width="1305px" height="600px">
+      </div>
+  </div>
+
+
+<?php
+  include "footer.html";
 ?>
 
 
-    <!---------------------message from VC ----------------------->
-        <br><br>
+<?php
+  echo "Registartion Completed successfully!!!";
+  // window.location = "signin.html";
+?>
 
-
-    <div class="card text-white bg-secondary my-5 py-4 text-center">
-      <div class="card-body">
-              
-      <div class="alert alert-warning" role="alert">
-          <h5>SORRY! Your password did not match! </h5>
-      </div>
-
-        <br><br>
-        <img src="img/c_pasw.jpg" width="1305px" height="600px">
-      </div>
-
-
-    </div>
-
-    <?php
-      include "footer.php";
-    ?>
 
 </body>
 </html>

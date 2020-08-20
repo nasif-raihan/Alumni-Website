@@ -1,9 +1,9 @@
 <?php
 
     require "dbconfig/config.php";
-    // echo '<script type="text/javascript" charset="utf-8"async defer> alert("Done") </script>';
+    
 ?>
-
+//echo '<script type="text/javascript" charset="utf-8"async defer> alert("Done") </script>';
 
 <!DOCTYPE html>
 <html lang="en">
@@ -136,7 +136,7 @@
 
 <?php
 
-    include "header.php";
+    include "header.html";
 
 ?>
 
@@ -323,7 +323,7 @@
 
             if($pass != $cpass)
             {
-                echo '<script type="text/javascript" charset="utf-8" async defer> alert("Student ID already exists !!! Choose another Student ID ...!") ; window.location="pass_cpass.php" </script>';
+                echo '<script type="text/javascript" charset="utf-8" async defer> alert("Student ID already exists !!! Choose another Student ID ...!") ; window.location="pass_cpass.html" </script>';
             }
             else
             {
@@ -333,7 +333,7 @@
 
                 if(mysqli_num_rows($query_run)>0)
                 {
-                    echo '<script type="text/javascript" charset="utf-8" async defer> alert("Student ID already exists !!! Choose another Student ID ...!") ; window.location="multi_roll.php" </script>';
+                    echo '<script type="text/javascript" charset="utf-8" async defer> alert("Student ID already exists !!! Choose another Student ID ...!") ; window.location="multi_roll.html" </script>';
                     $flag = 1;
                 }
                 else
@@ -345,7 +345,7 @@
                     
                     //echo '<script type="text/javascript" charset="utf-8"async defer> alert("Registration completed"); </script>';
 
-                    echo '<script> window.location="regi_done.php" </script>';
+                    echo '<script> window.location="regi_done.html" </script>';
 
                 }
             }
